@@ -19,12 +19,12 @@ pip install -r requirements.txt
 ```
 prefect server start
 ```
-5) be sure to configure PREFECT_API_URL
+5) be sure to configure PREFECT_API_URL  
 Configure Prefect to communicate with the server with:
 ```
     prefect config set PREFECT_API_URL=http://127.0.0.1:4200/api
 ```
-6) Check out the dashboard at http://127.0.0.1:4200
+6) Check out the dashboard at http://127.0.0.1:4200  
 View the API reference documentation at http://127.0.0.1:4200/docs
 
 
@@ -32,19 +32,19 @@ for creating prefect deployments:
 ```
 prefect project init
 ```
-this creates new files in the directory.
+this creates new files in the directory.  
 
-Start aworker that polls your work pool:
+Start a worker that polls your work pool:
 ```
 prefect worker start -p <my-pool> -t process
-```
+```  
 
-we can create the work pool from the UI
-
-
+(we can create the work pool from the UI)  
 
 
-In your virtual environment, install the prefect-email integration with
+
+
+In your virtual environment, install the prefect-email integration with 
 ```
 pip install prefect-email
 ```
